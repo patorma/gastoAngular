@@ -1,1 +1,36 @@
-<p>gastos works!</p>
+<div class="card border-primary tarjeta mb-3 panel">
+    <div class="card-header">Gastos</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Listado de gastos</h5>
+
+        <table class="table table-bordered table-striped table-sm table-md">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Gasto</th>
+                    <th>TipoGasto</th>
+                    <th>Valor</th>
+                    <th>Fecha</th>
+                    <th>
+                        Editar
+                    </th>
+                    <th>
+                        Eliminar
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let gasto of gastos">
+                    <td>{{gasto.id}}</td>
+                    <td>{{gasto.gasto}}</td>
+                    <td>{{gasto.TipoGasto}}</td>
+                    <td>{{gasto.valor}}</td>
+                    <td>{{gasto.createAt}}</td>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</div>

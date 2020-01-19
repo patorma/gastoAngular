@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GastosComponent } from './components/gastos/gastos.component';
+import { GastoService } from './services/gasto.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { GastosComponent } from './components/gastos/gastos.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GastoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
